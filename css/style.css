@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#home-hero {
+   background-color: #1C1E53;
+   padding-bottom: 128px;
+}
+
+a {
+   text-decoration: none;
+}
+
+.hero {
+   padding-top: 120px;
+}
+
+
+.home-title {
+   font-family: Poppins;
+   font-size: 44px;
+   font-weight: 600;
+   line-height: 50px; 
+}
+.home-list {
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 28px;
+}
+
+
+.home-right img {
+   width: 100%;
+}
+
+.home-links {
+   margin-bottom: 50px;
+   gap: 30px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.hero-work {
+   color: #1B1C2B;
+   font-family: Poppins;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 32px;
+   padding: 16px 40px;
+   border-radius: 41px;
+   background: #FCD980;
+   transition: 0.5s;
+}
+
+.hero-work:hover {
+   color: #FCD980;
+   background-color: transparent;
+}
+
+.hero-pricing {
+   color: #FFF;
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 28px;
+   transition: 0.5s;
+}
+
+.hero-pricing:hover {
+   color:#FCD980;
+}
+
+.projact-hero {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 57px 0 64px;
+}
+
+.projact-hero h2 {
+   color: var(--Dark-blue, #282938);
+   font-family: Poppins;
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 64px;
+}
+
+.projact-hero a {
+   color: #282938;
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 28px; 
+   transition: 0.5s;
+}
+
+.projact-hero a:hover {
+   color: #FCD980;
+}
+
+
+
+
+.project-left img , .project-right img {
+   width: 100%;
+}
+
+
+.project-left , .project-right{
+   position: relative;
+   overflow: hidden;
+}
+
+
+.project-hover {
+   padding: 5px;
+   position: absolute;
+   width: 50%;
+   background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+   left: -60%;
+   transition: 0.5s;
+   font-size: 12px;
+} 
+
+.project-left:hover :is(.project-hover) {
+   left: 0;
+}
+
+.project-hover-title {
+   color: var(--White, #FFF);
+   font-family: Poppins;
+   font-weight: 600;
+}
+
+.project-list {
+   color: var(--White, #FFF);
+   font-family: Poppins;
+   font-weight: 500;
+}
+
+.project-hover a {
+   color: #FCD980;
+   font-family: Poppins;
+   font-weight: 500;
+   line-height: 25px; 
+}
+
+.project-hover2 {
+   padding: 5px;
+   position: absolute;
+   width: 100%;
+   background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+   left: -100%;
+   transition: 0.5s;
+}
+
+.project-img:hover :is(.project-hover2)  {
+   left: 0;
+} 
+
+.project-hover2 h2  , .project-hover3 h2 {
+   color: var(--White, #FFF);
+   font-family: Poppins;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 36px;
+   padding: 90px 0 10px 0;
+}
+
+
+.project-hover2 a , .project-hover3 a {
+   color: var(--Yellow, #FCD980);
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 28px;
+}
+
+.project-hover3 {
+   padding: 5px;
+   position: absolute;
+   width: 100%;
+   background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+   left: -100%;
+   transition: 0.5s;
+}
+
+.project-img:hover :is(.project-hover3)  {
+   left: 0;
+} 
+
+.features {
+   background: var(--Grey, #F4F6FC);
+}
+
+
+.features-title h2 {
+   padding: 128px 0 12px 0;
+   color: var(--Dark-blue, #282938);
+   text-align: center;
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 28px; 
+}
+
+ .features-title p {
+   /* max-width: 630px; */
+   color: var(--Dark-blue, #282938);
+   text-align: center;
+   font-family: Poppins;
+   font-size: 40px;
+   font-weight: 600;
+   line-height: 64px;
+ }
+
+ .home-features {
+   display: grid ;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 50px;
+   justify-items: center;
+ }
+
+
+
+
+.card {
+   max-width: 405px;
+   height: 316px;
+   flex-shrink: 0;
+   border: none;
+   background-color: #fff;
+}
+
+
+.card h2 {
+   padding: 108px 0 12px 48px;
+   color:#282938;
+   font-family: Poppins;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 36px;
+}
+
+
+.card p {
+   padding: 0 0 48px 48px;
+   color:#282938;
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 28px;
+}
+
+@media (min-width:1000px) {
+   .home-hero {
+      display: flex;
+      justify-content: space-between;
+   } 
+   .home-title {
+      width: 582px;
+      font-size: 54px;
+      line-height: 70px;
+   }
+
+   .home-list {
+      width: 562px;
+      font-size: 16px;
+      line-height: 28px;
+   }
+
+   .home-links {
+      flex-direction: row;
+   }
+   .projact {
+   display: flex;
+   column-gap: 20px;
+}
+}
+.projact {
+   margin-bottom: 120px;
+}
+
+
+
+@media (min-width:700px) {
+   .project-hover-title {
+      font-size: 24px;
+      line-height: 36px;
+      padding: 200px  0 0 48px;
+   }
+   .project-list {
+      padding: 16px 0 40px 48px;
+      font-size: 16px;
+      line-height: 28px;
+   }
+
+   .project-hover a {
+      display: flex;
+      align-items: center;
+      padding: 0  0 62px 48px;
+      font-size: 16px;
+      line-height: 28px;
+   }
+   .home-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+   }
+}
+
+
+@media (min-width:1000px) {
+   .project-hover-title {
+      font-size: 30px;
+      line-height: 36px;
+      padding: 300px  0 0 48px;
+   }
+   .project-list {
+      padding: 16px 0 40px 48px;
+      font-size: 20px;
+      line-height: 28px;
+   }
+
+   .project-hover a {
+      display: flex;
+      align-items: center;
+      padding: 0  0 62px 48px;
+      font-size: 20px;
+      line-height: 28px;
+   }
+   .home-features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+   }
+
+   .features-title p {
+      max-width: 630px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+   }
+}
+
+
+
+
+
