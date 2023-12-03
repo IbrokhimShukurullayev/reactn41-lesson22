@@ -1,4 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.navbar-toggler-icon {
+    background-image: url(../assets/images/bars-solid\ \(2\).svg);
+}
+
+body {
+   overflow-x: hidden;
+}
+
+.bg-body-tertiary {
+   --bs-bg-opacity: 1;
+   background-color: #1C1E53!important;
+}
+
+#navbar.navbar-shrink {
+    height: 70px;
+    box-shadow: 0 0 10px 10px #1B1C2B;
+}
+
+.nav-link {
+   color: #fff;
+}
+
+.nav-link-item , .nav-link-items {
+   display: flex;
+   gap: 40px;
+}
+
+
+.header-btn {
+   padding: 16px 40px;
+   color: var(--White, #FFF);
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 28px;
+   border-radius: 41px;
+   border: 2px solid rgba(244, 246, 252, 0.20);
+   background-color: transparent;
+}
+
 
 #home-hero {
    background-color: #1C1E53;
@@ -191,6 +231,7 @@ a {
 
 .features {
    background: var(--Grey, #F4F6FC);
+   padding-bottom: 120px;
 }
 
 
@@ -252,6 +293,164 @@ a {
    line-height: 28px;
 }
 
+
+.clints-title {
+   max-width: 329px;
+   color: var(--Dark-blue, #282938);
+   font-family: Poppins;
+   font-size: 38px;
+   font-weight: 600;
+   line-height: 56px;
+}
+.clints-list {
+   max-width: 329px;
+   color: var(--Dark-blue, #282938);
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 28px;
+}
+
+.clint {
+   display: flex;
+   flex-direction: column;
+   column-gap: 110px;
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+.clints-rights , .clints-rightss {
+   max-width: 843px;
+   color: var(--Dark-blue, #282938);
+   font-family: Poppins;
+   font-size: 32px;
+   font-weight: 500;
+   line-height: 48px;
+   margin-bottom: 50px;
+}
+.clints-icon , .clints-icons {
+   display: flex;
+   column-gap: 10px;
+}
+
+.clints-icon img , .clints-icons img {
+   border-radius: 50%;
+}
+.clints-icon-links , .clints-icon-links {
+   color: var(--Dark-blue, #282938);
+   font-family: Poppins;
+   font-size: 7px;
+   font-weight: 500;
+   line-height: 32px;
+}
+
+
+.clints-icon-link p , .clints-icon-links p {
+   color: var(--Dark-blue, #282938);
+   font-family: Poppins;
+   font-size: 12px;
+   font-weight: 500;
+   line-height: 28px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   z-index: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 15%;
+   padding: 0;
+   /* color: red;
+   background-color: #1C1E53; */
+}
+
+
+.footer{
+  padding: 95px 0;
+  background-color:#1C1E53 !important;
+}
+.logo{
+  width: 160px;
+  height: 32px;
+  color:#fff;
+}
+.footer__text{
+  max-width: 399px;
+  margin-top: 24px;
+  color: #fff;
+  opacity:.8;
+  font-family:var(--Poppins);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+.footer__text:nth-child(2){
+  margin-top: 14px;
+}
+.form{
+  max-width: 517px;
+  padding: 18px 35px;
+  background: #FCD980;
+}
+label, input{
+  display: block;
+  border:none;
+  outline:none;
+  background: transparent;
+}
+label{
+  color: var(--Dark-blue);
+  font-family: var(--Poppins);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; 
+}
+input::placeholder{
+  color: var(--Dark-blue);
+  opacity: .8;
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; 
+}
+.form{
+  display: flex;
+}
+
+
+.footer__right{
+  display: block;
+  margin-top: 0;
+}
+.footer__right h2{
+  max-width: 333px;
+  margin-top: 0;
+  font-family: var(--Poppins);
+  color:#fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; 
+}
+
+.clint {
+   flex-direction: column;
+}
+.footer__icon{
+  display: flex;
+  gap: 26px;
+}
+.footer__icon i{
+  font-size: 18px;
+  color:#fff;
+}
+
 @media (min-width:1000px) {
    .home-hero {
       display: flex;
@@ -276,6 +475,7 @@ a {
    display: flex;
    column-gap: 20px;
 }
+
 }
 .projact {
    margin-bottom: 120px;
@@ -344,5 +544,10 @@ a {
 
 
 
+@media (min-width:1000px) {
+   .clint {
+   flex-direction: row ;
+}
+}
 
 
